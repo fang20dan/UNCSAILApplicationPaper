@@ -1,4 +1,4 @@
-class Game:
+class game:
     def __init__(self, pitches, events, outcomes) -> None:
         #pitching sequence for specific game (list)
         self.pitches = pitches
@@ -15,3 +15,12 @@ class Game:
 
     def getOutcomes(self):
         return self.outcomes
+
+    def addPitches(self, pitch):
+        self.pitches = self.pitches.append(pitch)
+
+    def addEvents(self, event):
+        self.events = self.events.append(event)
+
+    def addOutcomes(self, out):
+        self.outcomes = self.outcomes.append(out)
